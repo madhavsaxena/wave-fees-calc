@@ -6,26 +6,40 @@
   <title>Wave Payments Fee Calculator</title>
   <meta name="description" content="Calculate the fees Wave will charge for Receiving Payments">
   <meta name="viewport" content="width=device-width, user-scalable=no" />  
-  <meta name="theme-color" content="">
+  <meta name="theme-color" content="#53adc6">
   <link rel="stylesheet" href="assets/main.css">
   <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:500,700" rel="stylesheet">  
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.5/angular.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.5/angular-route.js"></script>  
-
   <link rel="manifest" href="manifest.json" />
+  <link rel="icon" type="image/png" href="assets/icons/wave-48x48.png">
+
+  <!--ios-->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link href="assets/icons/iphone5_splash.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+  <link href="assets/icons/iphone6_splash.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+  <link href="assets/icons/iphoneplus_splash.png" media="(device-width: 621px) and (device-height: 1104px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
+  <link href="assets/icons/iphonex_splash.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
+  <link href="assets/icons/iphonexr_splash.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+  <link href="assets/icons/iphonexsmax_splash.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
+  <link href="assets/icons/ipad_splash.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+  <link href="assets/icons/ipadpro1_splash.png" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+  <link href="assets/icons/ipadpro3_splash.png" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+  <link href="assets/icons/ipadpro2_splash.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+   <!--ios-->
 </head>
 
 <body ng-app="waveApp">
 
-<div ng-view id="container"></div>   
+  <div ng-view id="container"></div>
 
+  <nav>
+    <a href="/">Home</a>
+    <a href="#!card">Card</a>
+    <a href="#!bank">Bank Transfer</a>
+    <a href="#!about">About</a>
+  </nav>
 
-<nav>
-  <a href="/">Home</a>
-  <a href="#!card">Card</a>
-  <a href="#!bank">Bank Transfer</a>
-  <a href="#!about">About</a>
-</nav>
 </body>
 
 <script>
