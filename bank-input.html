@@ -1,0 +1,11 @@
+<div class="calc-screen" ng-controller="bankCtrl">
+	<h1>Bank-to-Bank Fee Calculator</h1>
+	<p>Enter the total invoice figure - </p>
+	<input type="number" ng-model="bankinvoice">
+	<a href="" ng-click="results=true">Results</a>
+
+	<div class="results" ng-show="results">
+  		<h2>Ask for {{bankinvoice | currency}} and you'll end up with {{ bankinvoice * rate | currency }}. That's {{ bankinvoice - (bankinvoice * rate) | currency }} in fees.</h2>
+  		<h2>If you want {{bankinvoice | currency}}, then you should ask for {{ bankinvoice / rate | currency }}</h2>
+  	</div>
+</div>

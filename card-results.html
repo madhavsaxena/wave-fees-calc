@@ -1,0 +1,7 @@
+  <div ng-controller="cardCtrl">
+  <h2>Ask for {{invoice | currency}} and you'll end up with {{ (invoice * rate) - fee | currency }}</h2>
+  <h2>If you want {{invoice | currency}}, then you should ask for {{ (invoice + fee) / rate | currency }}</h2>
+  {{invoice}}
+  {{rate}}
+  {{fee}}
+</div>

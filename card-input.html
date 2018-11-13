@@ -1,0 +1,11 @@
+<div class="calc-screen" ng-controller="cardCtrl">
+	<h1>Card Fee Calculator</h1>
+	<p>Enter the total invoice figure - </p>
+	<input type="number" ng-model="invoice">
+<a href="" ng-click="results=true">Results</a>
+
+	<div ng-show="results" class="results">
+  		<h2>Ask for {{invoice | currency}} and you'll end up with {{ (invoice * rate) - fee | currency }}. That's {{ invoice * (1 - rate) + fee | currency }} in fees.</h2>
+  		<h2>If you want {{invoice | currency}}, then you should ask for {{ (invoice + fee) / rate | currency }}.</h2>
+  	</div>
+</div>
